@@ -37,16 +37,17 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0px 15px;
 }
 .header {
-  width: 1600px;
+  max-width: 1600px;
 }
 /* Site nav */
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
+  padding: 25px 15px;
 }
 .header-nav {
   display: flex;
@@ -127,13 +128,16 @@ img {
 }
 /* Hero section */
 .section {
-  width: 1600px;
-  padding-top: 94px;
+  max-width: 1600px;
+  padding: 94px 0px;
+}
+.section.work {
+  padding-top: 0px;
 }
 .hero-sec {
   background-color: var(--background-hero);
   text-align: center;
-  padding-bottom: 94px;
+  padding: 200px 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -162,6 +166,20 @@ img {
   margin: 0;
   list-style: none;
   justify-content: center;
+}
+.list-item {
+  max-width: 270px;
+  margin-right: 30px;
+  margin-bottom: 9px;
+}
+.address-list > .list-item:nth-child(3) {
+  margin-bottom: 0px;
+}
+.list-item.item {
+  margin-bottom: 0px;
+}
+.list-item:nth-child(4) {
+  margin-right: 0px;
 }
 .list-text {
   width: 270px;
@@ -305,6 +323,8 @@ img {
 
 /* Footer */
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 26px;
@@ -313,14 +333,12 @@ img {
   color: var(--secondary-text-color);
   text-decoration: none;
 }
+
 .footer {
   background-color: var(--background-footer);
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 1600px;
-}
-.address-list {
-  margin-top: 20px;
+  max-width: 1600px;
 }
 .address-list .address-link {
   font-style: normal;
@@ -338,12 +356,6 @@ img {
 .address-link {
   display: block;
 }
-.address-link.mail {
-  margin-top: 9px;
-}
-.address-link.tel {
-  margin-top: 9px;
-}
 /* Portfolio */
 .filter-subtitle {
   font-weight: bold;
@@ -351,6 +363,9 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
   margin-bottom: 4px;
 }
 .filter-paragraph {
@@ -358,6 +373,10 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-top: 0px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
 }
 .filter-list {
   display: flex;
@@ -382,7 +401,10 @@ img {
   margin: 0px;
 }
 .filter {
-  margin: 20px 24px;
+}
+.filter-item-link {
+  display: block;
+  text-decoration: none;
 }
 /* Botton */
 .button {
@@ -412,19 +434,15 @@ img {
 /* Flex Buttons */
 .buttons-list .button.all {
   min-width: 73px;
-  margin-right: 8px;
 }
 .buttons-list .button.sites {
   min-width: 128px;
-  margin-right: 8px;
 }
 .buttons-list .button.designe {
   min-width: 145px;
-  margin-right: 8px;
 }
 .buttons-list .button.marketing {
   min-width: 103px;
-  margin-right: 8px;
 }
 .buttons-list .button.apps {
   min-width: 130px;
@@ -433,4 +451,10 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+}
+.buttons {
+  margin-right: 8px;
+}
+.buttons:nth-child(5) {
+  margin-right: 0px;
 }
