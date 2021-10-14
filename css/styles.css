@@ -33,6 +33,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 0px;
 }
 .container {
   width: 1200px;
@@ -41,12 +42,12 @@ img {
 }
 .header {
   max-width: 1600px;
+  border-bottom: 1px solid #ececec;
 }
 /* Site nav */
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
   padding: 25px 15px;
 }
 .header-nav {
@@ -137,7 +138,7 @@ img {
 .hero-sec {
   background-color: var(--background-hero);
   text-align: center;
-  padding: 200px 200px;
+  padding: 200px 0px;
 }
 .hero-title {
   font-weight: 900;
@@ -257,13 +258,11 @@ img {
 }
 .team-text.first {
   min-width: 130px;
-  margin-left: 70px;
-  margin-right: 70px;
+  text-align: center;
 }
 .team-text.second {
   min-width: 147px;
-  margin-left: 62px;
-  margin-right: 61px;
+  text-align: center;
 }
 .team-text.third {
   min-width: 76px;
@@ -272,19 +271,16 @@ img {
 }
 .team-text.fourth {
   min-width: 87px;
-  margin-left: 92px;
-  margin-right: 91px;
+  text-align: center;
 }
 
 .team-names.first {
   min-width: 151px;
-  margin-left: 60px;
-  margin-right: 59px;
+  text-align: center;
 }
 .team-names.second {
   min-width: 109px;
-  margin-left: 81px;
-  margin-right: 80px;
+  text-align: center;
 }
 .team-names.third {
   min-width: 137px;
@@ -293,8 +289,7 @@ img {
 }
 .team-names.fourth {
   min-width: 134px;
-  margin-left: 68px;
-  margin-right: 68px;
+  text-align: center;
 }
 /* Team */
 .team {
@@ -351,7 +346,7 @@ img {
 }
 .address-list .address-link:hover,
 .address-list .address-link:focus {
-  color: var(--secondary-text-color);
+  color: var(--accent-color);
 }
 .address-link {
   display: block;
@@ -363,20 +358,19 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 4px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 4px;
 }
 .filter-paragraph {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-top: 0px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 20px;
+  padding-top: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
 }
 .filter-list {
   display: flex;
@@ -400,8 +394,7 @@ img {
 .filter-item:nth-child(n + 7) {
   margin: 0px;
 }
-.filter {
-}
+
 .filter-item-link {
   display: block;
   text-decoration: none;
@@ -429,7 +422,6 @@ img {
 .buttons-list .button.current {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
-  margin-right: 8px;
 }
 /* Flex Buttons */
 .buttons-list .button.all {
