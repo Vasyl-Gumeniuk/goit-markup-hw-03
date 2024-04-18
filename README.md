@@ -1,2 +1,1 @@
-# goit-markup-hw-03
-Домашня робота №3
+## goit-markup-hw-03
